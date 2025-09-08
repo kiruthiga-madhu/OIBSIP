@@ -1,0 +1,110 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?w=1600') no-repeat center center/cover;
+    animation: bgZoom 20s ease-in-out infinite alternate;
+}
+@keyframes bgZoom {
+    0% { background-size: 100% 100%; }
+    100% { background-size: 110% 110%; }
+}
+
+header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    padding: 0 20px;
+    backdrop-filter: blur(2px);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+}
+
+button {
+    margin-top: 20px;
+    background: white;
+    color: #1a2a6c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: #ffcc00;
+    color: white;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background: rgba(0,0,0,0.5);
+}
+
+.feature {
+    flex: 1 1 250px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}

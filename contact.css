@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+    max-width: 1100px;
+}
+
+.contact-card,
+.contact-form {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    backdrop-filter: blur(6px);
+}
+
+.contact-card:hover,
+.contact-form:hover {
+    transform: rotateY(12deg) rotateX(8deg) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.contact-card h2,
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-card p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #f1f1f1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #ff7b54;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ff5722;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
